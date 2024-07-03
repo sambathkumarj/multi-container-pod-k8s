@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-service
+spec:
+  selector:
+    app: web-app
+  type: NodePort
+  ports:
+  - name: frontend
+    port: 3003
+    targetPort: 3003
+    nodePort: 30081  # Specify a nodePort or let Kubernetes assign one
+  - name: netflix
+    port: 80
+    targetPort: 80
+    nodePort: 30082  # Specify a nodePort or let Kubernetes assign one
+
