@@ -192,7 +192,7 @@ microk8s kubectl logs multi-container-pod -c netflix
 For the Node.js application, open your browser or use `curl` to access:
 
 ```
-http://<node-ip>:30003
+http://<node-ip>:30081
 ```
 
 ![frontend](https://github.com/sambathkumarj/multi-container-pod-k8s/assets/42794636/14037b55-5546-4264-8b8a-0891b8ae2f92)
@@ -201,7 +201,7 @@ http://<node-ip>:30003
 For the Angular application, open your browser or use `curl` to access:
 
 ```
-http://<node-ip>:30080
+http://<node-ip>:30082
 ```
 
 ![netflix](https://github.com/sambathkumarj/multi-container-pod-k8s/assets/42794636/eb52e138-0239-4e3c-a684-e59aec3c07dc)
